@@ -18,4 +18,14 @@ Chapter 2
 ++ Ecto's Type function will convert a type for us (integer to string for example)  
 ++ Create a Query binding by using the 'in' keyword (from a in "artists", where: a.name == "Bill Evans", select...)  
 ++ Use the fragment keyword to inject raw SQL into a query (can also create macro if keyword is used often)  
+++ The Union operator combines the results of different queries  
+++ order_by and group_by keywords are available in Ecto  
+++ Give thought to columns that might contain null by using :asc_nulls_last, :asc_nulls_first  
+++ the having clause will take results of query and further refine them  
+++ when using the select keyword, you can provide a map for a more expressive return statement  
+++ When composing queries, binding order is preserverd  
+++ To create named bindings, you use the keyword 'as: ' and it must follow after from and/or join. You also must use an atom  
+++ Named bindings can appear in any order after the from keyword  
+++ use has_named_binding? function to determine whether query has a named binding  
+++ use or macro in where keyword  
 ++
