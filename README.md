@@ -15,4 +15,7 @@ Chapter 2
 ++ Macro (like the Ecto.Query.from function) is code that writes code  
 ++ When using prefixes in your database, you can specify them by using the prefix keyword  
 ++ Because Ecto's query syntax is implemented using macros, we need to use the pin operator (^) when using variables  
+++ Ecto's Type function will convert a type for us (integer to string for example)  
+++ Create a Query binding by using the 'in' keyword (from a in "artists", where: a.name == "Bill Evans", select...)  
+++ Use the fragment keyword to inject raw SQL into a query (can also create macro if keyword is used often)  
 ++
