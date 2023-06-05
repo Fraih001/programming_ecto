@@ -12,4 +12,7 @@ Chapter 1
 Chapter 2
 
 ++ Ecto provides two different synta: macro (pipe operator) and keyword  
+++ Macro (like the Ecto.Query.from function) is code that writes code  
+++ When using prefixes in your database, you can specify them by using the prefix keyword  
+++ Because Ecto's query syntax is implemented using macros, we need to use the pin operator (^) when using variables  
 ++
