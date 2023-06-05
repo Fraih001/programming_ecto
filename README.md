@@ -28,4 +28,8 @@ Chapter 2
 ++ Named bindings can appear in any order after the from keyword  
 ++ use has_named_binding? function to determine whether query has a named binding  
 ++ use or macro in where keyword  
+++ or_where macro works exactly like the where keyword but uses OR instead of the default AND operator
+
+Chapter 3
+
 ++
