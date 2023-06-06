@@ -40,4 +40,6 @@ Chapter 3
 ++ In Ecto, relationships between DB tables are referred to as associations  
 ++ For nested associations, use the through: option  
 ++ For many-to-many associations, use the join_through: option. If you only need foreign keys in the relationship table, then you do not need to create a schema. However, if you need other keys in that table besides the foreign keys (timestamps, etc), then you'll need to create a schema  
+++ Due to Ecto not having "lazy loading," you can use the preload function if you want to load any associations within a given query (grabbing all albums then preloading tracks for albums for example)  
+++ on_delete option provides a way to delete child records when a parent record has been deleted (:nothing, :nilify_all, :delete_all are different options to pass)  
 ++
