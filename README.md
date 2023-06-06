@@ -34,4 +34,10 @@ Chapter 3
 
 ++ Schema macro takes two args: name of table to map to and a block containing definitions for the fields to use  
 ++ The schema does not have to match 1 to 1 w/ the columns in database table, only those fields we plan to use in our code  
+++ timestamp macro adds two fields to schema - inserted_at, updated_at <- these fields must be found within the table for this to work properly  
+++ By default, Ecto will create id field for you  
+++ Integrating a schema into the query performs type conversions for us, allows us to remove the select option and returns a schema struct  
+++ In Ecto, relationships between DB tables are referred to as associations  
+++ For nested associations, use the through: option  
+++ For many-to-many associations, use the join_through: option. If you only need foreign keys in the relationship table, then you do not need to create a schema. However, if you need other keys in that table besides the foreign keys (timestamps, etc), then you'll need to create a schema  
 ++
