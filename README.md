@@ -32,4 +32,6 @@ Chapter 2
 
 Chapter 3
 
+++ Schema macro takes two args: name of table to map to and a block containing definitions for the fields to use  
+++ The schema does not have to match 1 to 1 w/ the columns in database table, only those fields we plan to use in our code  
 ++
