@@ -58,4 +58,8 @@ first arg: new schema struct, a fetched record, or another changeset
 second arg: raw data to be applied  
 third arg: list of params allowed in the changeset, anything not listed will be discarded  
 ++ you can pass an empty_values option to the changeset to change the string NULL for example to an empty value  
-++
+++ Validations and constraints check the integrity of our data  
+++ the validate_change function is a way to create custom validations by passing an anonymous function to perform whatever check you need.  
+++ it's smart to move your custom validations to separate function, makes it easier to read  
+++ Constraints are enforced by the database, will not see an error until the databasse is interacted with  
+++ the unsafe_validate_unique function is a hybrid between a vliadation and a constraint
