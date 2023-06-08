@@ -41,5 +41,21 @@ Chapter 3
 ++ For nested associations, use the through: option  
 ++ For many-to-many associations, use the join_through: option. If you only need foreign keys in the relationship table, then you do not need to create a schema. However, if you need other keys in that table besides the foreign keys (timestamps, etc), then you'll need to create a schema  
 ++ Due to Ecto not having "lazy loading," you can use the preload function if you want to load any associations within a given query (grabbing all albums then preloading tracks for albums for example)  
-++ on_delete option provides a way to delete child records when a parent record has been deleted (:nothing, :nilify_all, :delete_all are different options to pass)  
+++ on_delete option provides a way to delete child records when a parent record has been deleted (:nothing, :nilify_all, :delete_all are different options to pass)
+
+Chapter 4
+
+++ First step in creating a changeset is taking the raw input data and generating an Ecto.Changeset struct.  
+++ Casting and filtering is when we perform any needed type casting operations (changing a string to an integer) and then filter our any values we don't need.  
+++ If the data is internal (the app is generating it), then we can create a changeset using the change function. (ex: changeset = change(%Artist{name: "Charlie Parker"}))  
+++ To make changes to an existing record, we use a record fetched from Repo (Repo.get_by(data) -> change(data))  
+++ To see the changes that are going to applied, check the changes field (ex: changeset.changes)  
+++ We can update a changeset instead of creating a new one (ex: changeset = change(changeset, birth_date: ~D[1941-01-27])) or you can add multiple arguments to the change function (ex: changeset = change(artist, name: "Robert Hutcherson",
+birth_date: ~D[1941-01-27]))  
+++ the cast function is similar to change as it returns a changeset  
+++ the cast function takes three arguments  
+first arg: new schema struct, a fetched record, or another changeset  
+second arg: raw data to be applied  
+third arg: list of params allowed in the changeset, anything not listed will be discarded  
+++ you can pass an empty_values option to the changeset to change the string NULL for example to an empty value  
 ++
