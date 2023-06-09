@@ -62,4 +62,6 @@ third arg: list of params allowed in the changeset, anything not listed will be 
 ++ the validate_change function is a way to create custom validations by passing an anonymous function to perform whatever check you need.  
 ++ it's smart to move your custom validations to separate function, makes it easier to read  
 ++ Constraints are enforced by the database, will not see an error until the databasse is interacted with  
-++ the unsafe_validate_unique function is a hybrid between a vliadation and a constraint
+++ the unsafe_validate_unique function is a hybrid between a vliadation and a constraint  
+++ To set up a changeset to work without a schema, you must first define a map where the keys are the keys of the changeset and the values are the data types  
+++
