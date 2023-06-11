@@ -67,4 +67,10 @@ third arg: list of params allowed in the changeset, anything not listed will be 
 
 Chapter 5
 
-++
+++ Transactions allow you to group operations together so you can be certain that they will all succeed, or all fail.  
+++ Ecto supports transactions through the Repo.transaction function.  
+You can execute this function in two ways. The first way is to provide another function that contains the operations you’d like to execute. The second way is to use Ecto.Multi, a data structure consisting of a queue of operations to be run within a transaction.  
+++ Must use bang (!) after database call to ensure error is raised by transaction function and rollback occurs  
+If you didn't want to use a bang, then you can use the rollback function explicitly  
+++ When using the transaction button, you want to execute database operations first before any non-database functions  
+++ 
