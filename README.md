@@ -85,5 +85,6 @@ Chapter 6
 ++ Ecto uses migrations to create and alter tables in the DB  
 ++ A migration is a set of commands, created in Elixir, that contains the instructions for the changes you want to make  
 ++ The easiest way to create a new migration is to use the mix task that Ecto provides: mix ecto.gen.migration.  
+++ Ecto will always create a primary key column called id unless you instruct it not to  
 ++ 
 

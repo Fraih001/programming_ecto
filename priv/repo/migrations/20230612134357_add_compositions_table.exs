@@ -7,5 +7,6 @@ defmodule MusicDB.Repo.Migrations.AddCompositionsTable do
       add :year, :integer, null: false
       add :artist_id, references("artists"), null: false
       timestamps()
+    end
   end
 end
