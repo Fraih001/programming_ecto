@@ -73,4 +73,14 @@ You can execute this function in two ways. The first way is to provide another f
 ++ Must use bang (!) after database call to ensure error is raised by transaction function and rollback occurs  
 If you didn't want to use a bang, then you can use the rollback function explicitly  
 ++ When using the transaction button, you want to execute database operations first before any non-database functions  
+++ Drawbacks to anon transation functions:  
++ One small error like forgetting a bang can have a big negative impact on db   
++ Anon functions are not composable, limiting their reusability  
++ Requires a lot of code to see errors  
+++ Instead of using an anon function to use transactions, you can use Ecto.Multi  
+++ Use the new keyword to create a new multi struct (Multi.new) instead of %Multi{}  
+  
+Chapter 6  
+  
 ++ 
+
