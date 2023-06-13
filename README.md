@@ -1,7 +1,9 @@
-# programming_ecto
-
-Chapter 1
-
+# programming_ecto  
+  
+PART 1  
+  
+Chapter 1  
+  
 ++ All communication to and from the database goes through Repo.  
 ++ mix ecto.reset will drop the database, re-create it, and repopulate it with the original sample data.  
 ++ If you want to talk to your databae, you to the the Repository (Repo module)  
@@ -86,5 +88,15 @@ Chapter 6
 ++ A migration is a set of commands, created in Elixir, that contains the instructions for the changes you want to make  
 ++ The easiest way to create a new migration is to use the mix task that Ecto provides: mix ecto.gen.migration.  
 ++ Ecto will always create a primary key column called id unless you instruct it not to  
+++ mix.ecto.rollback allows you to rollback your last migration  
+++ general rule: it's OK to edit an existing migration provided that you haven't already committed your migration to source control.  
+++ Use index function to create indices for columns within a table  
+++ When migrating data from one table to another, consider using the flush function as it tells Ecto to execute the currently queued operations (any code before the flush call)  
+++ When making big changes to the db, write up and down functions so that Ecto can rollback changes effectively, usually the up function just being the change  function, then a separate down function to assist with rollback  
+  
+PART 2  
+  
+Chapter 7  
+  
 ++ 
 
