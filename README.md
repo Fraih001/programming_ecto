@@ -98,5 +98,8 @@ PART 2
   
 Chapter 7  
   
+++ --sup flag when creating a new project adds Ecto to the supervision tree of the project  
+  
+Chapter 8  
+  
 ++ 
-
