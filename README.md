@@ -102,4 +102,15 @@ Chapter 7
   
 Chapter 8  
   
-++ Come back to this chapter if working with forms
+++ Come back to this chapter if working with forms  
+  
+Chapter 9  
+  
+++ To use the testing sandbox, add "pool: Ecto.Adapters.SQL.Sandbox" to the Repo config file  
+++ Then, need to set the correct ownership mode  
+++ Ownership mode affects the way the sandbox interacts with different processes. The three modes are: :auto, :manual, :shared  
+++ To work around limitations of shared mode (able to share processes but unable to run tests concurrently), Ecto provides allowances.  
+  
+Chapter 10  
+  
+++ 
