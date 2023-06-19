@@ -113,4 +113,10 @@ Chapter 9
   
 Chapter 10  
   
+++ In order to create a new type, based on an existing one, first need to create a module that implements the Ecto.Type behavior  
+++ Within module, must create type, dump, load and cast functions  
+++ To work with a data type not recognized in Ecto, need to write custom driver extension  
+  
+Chapter 11  
+  
 ++ 
