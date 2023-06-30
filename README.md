@@ -119,4 +119,8 @@ Chapter 10
   
 Chapter 11  
   
+++ Upsert is a mash-up of update & insert  
+++ Use on_conflict to make changes when using insert (:replace, :nothing, :raise - default)  
+++ When using replace, it is a tuple {:replace, [:columns to replace]}  
+++ Add conflict_target / returning keys to specificy exactly which column should be changed  
 ++ 
