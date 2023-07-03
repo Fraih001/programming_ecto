@@ -123,4 +123,11 @@ Chapter 11
 ++ Use on_conflict to make changes when using insert (:replace, :nothing, :raise - default)  
 ++ When using replace, it is a tuple {:replace, [:columns to replace]}  
 ++ Add conflict_target / returning keys to specificy exactly which column should be changed  
+  
+Chapter 12  
+  
+++ When testing to see whether a changeset is created correctly, use apply_changes() instead of calling the db. It is a much less expensive call.  
+  
+Chapter 13  
+  
 ++ 
