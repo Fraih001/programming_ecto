@@ -130,4 +130,9 @@ Chapter 12
   
 Chapter 13  
   
+++ Embedded schema are an alternative to using regular associations.  
+++ Embedded schema are captured in the same table as the parent schema, instead of a separate table  
+  
+Chapter 14  
+  
 ++ 
