@@ -135,4 +135,8 @@ Chapter 13
   
 Chapter 14  
   
+++ Polymorphism isn't built out of the box in Ecto. Need to use one of three approaches outlined in the book.  
+  
+Chapter 15  
+  
 ++ 
