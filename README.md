@@ -139,4 +139,9 @@ Chapter 14
   
 Chapter 15  
   
+++ Add import and aliases to the iex file to save on keystrokes  
+++ Add helper functions (update data for example) to a separate file to be used exclusively in iex  
+  
+Chapter 16  
+  
 ++ 
