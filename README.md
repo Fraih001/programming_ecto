@@ -144,4 +144,9 @@ Chapter 15
   
 Chapter 16  
   
+++ The conventions around naming and
+date nomenclature are a user-facing concern, not a data modeling concern.  
+  
+Chapter 17  
+  
 ++ 
