@@ -149,4 +149,7 @@ date nomenclature are a user-facing concern, not a data modeling concern.
   
 Chapter 17  
   
-++ 
+++ You can optimize queries for bandwidth or latency, depending on your bottleneck.  
+++ There are several atomic operations (:push, :pull, :set, :inc, :dec etc.)  
+++ If you're adding large datasets, you might need to use Enum.chunk_every so as not to run up against the preset limits of PostgreSQL (32,767). This may also reduce the chance of timeouts.  
+++ Streams are used to load lots of data into memory at once.
